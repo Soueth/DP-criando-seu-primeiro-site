@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdontoClin</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        html,body {
+            margin: 0;
+        }
+        
+        body {
+            background-color: f1f1f1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 1400px;
+            height: 625px;
+            display: flex;
+            margin: 0 auto;
+            background-color: #f1f1f1;
+        }
+
+        .main {
+            display: flex;
+            flex-flow: column;
+            width: 100%;
+        }
+
+        .menu {
+            width: 25%;
+            background-color: rgba(121, 88, 255, 0.15);
+            padding: 10px 20px 0px;
+        }
+
+        .header {
+            background-color: rgba(206, 208, 254, 0.03);
+            min-height: 90px;
+            padding: 0px 190px 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content {
+            background-color: white;
+            min-height: 450px;
+            padding: 20px 10px 0px;
+        }
+
+        .footer {
+            background-color: lightgray;
+            min-height: 65px;
+        }
+
+        table {
+            border: solid black;
+        }
+
+        thead {
+            background-color: black;
+            color: #f1f1f1;
+            align-items: center;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: lightgray
+        }
+
+
+    </style>
+</head>
+<body>
+    <div    class="wrapper">
+        <div    class="menu">
+            <font style="font-size: 130%;"><h3>Menu:</h3></font>
+            <ul>
+                <li><a href="Index.html">Página Pincipal</a></li><br>
+                <li><a href="Sobre.html">Sobre a Clínica</a></li><br>
+                <li><a href="Horários.html">Horários de Atendimento</a></li><br>
+                <li><a href="Contato.html">Contato</a></li><br>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="calendário.png" title="Hórários" height="70">
+            </div>
+    
+            <div    class="content">
+                Utilizamos técnicas e equipamentos modernos para oferecer uma ampla gama de serviços: limpeza e prevenção, restaurações dentárias, tratamentos de canal, extrações, implantes dentários, ortodontia, estética dental.
+            
+                <table class="table" width="1000" align="center" cellspacing="0">
+                    <caption><strong>Tabela de Horários</strong></caption>
+                    <thead>
+                        <tr>
+                        <th>Serviços</th>
+                        <th>Segunda a Sexta</th>
+                        <th>Sábados</th>
+                        <th>Feriados</th>
+                    </tr>
+                    </thead>
+                    <tbody align="center">
+                    <tr>
+                        <td>Limpeza e prevenção</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 19h</td>
+                    </tr>
+                    <tr>
+                        <td>Restaurações dentárias</td>
+                        <td>08h - 17h</td>
+                        <td>08h - 15h</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>Tratamentos de canal</td>
+                        <td>08h - 17h</td>
+                        <td>08h - 17h</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>Extrações</td>
+                        <td>08h - 17h</td>
+                        <td>08h - 17h</td>
+                        <td>08h - 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Implantes dentários</td>
+                        <td>08h - 17h</td>
+                        <td>08h - 15h</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>Ortodontia</td>
+                        <td>08h - 17h</td>
+                        <td>08h - 17h</td>
+                        <td>08h - 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Estética dental</td>
+                        <td>08h - 17h</td>
+                        <td>08h - 17h</td>
+                        <td>08h - 17h</td>
+                    </tr>
+                    </tbody>
+                </table> 
+          
+                
+            </div>               
+            <div    class="footer">  
+                <font style="font-size: 75%;font-weight: 600;" face="arial" >Número: (12) 3456-7890</font> <br>
+                <font style="font-size: 75%;font-weight: 600;" face="arial" >Email: example@mail.com</font>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

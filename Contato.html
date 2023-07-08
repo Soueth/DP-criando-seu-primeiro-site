@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdontoClin</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        html,body {
+            margin: 0;
+        }
+        
+        body {
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 1400px;
+            height: 625px;
+            display: flex;
+            margin: 0 auto;
+            background-color: #f1f1f1;
+        }
+
+        .main {
+            display: flex;
+            flex-flow: column;
+            width: 100%;
+        }
+
+        .menu {
+            width: 25%;
+            background-color: rgba(121, 88, 255, 0.15);
+            padding: 10px 20px 0px;
+        }
+
+        .header {
+            background-color: rgba(224, 225, 255, 0.03);
+            min-height: 90px;
+            padding: 0px 190px 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content {
+            background-color: white;
+            min-height: 450px;
+            padding: 20px 10px 0px;
+        }
+
+        .footer {
+            background-color: lightgray;
+            min-height: 65px;
+        }
+
+        span {
+            background-color: rgba(211, 211, 211, 0.5);
+        }
+
+        div#fram1 {
+            position: absolute;
+            overflow: auto;
+
+            top: 20%;
+            right: 8%;
+        }
+    </style>
+</head>
+<body>
+    <div    class="wrapper">
+        <div    class="menu">
+            <font style="font-size: 130%;"><h3>Menu:</h3></font>
+            <ul>
+                <li><a href="Index.html">Página Pincipal</a></li><br>
+                <li><a href="Sobre.html">Sobre a Clínica</a></li><br>
+                <li><a href="Horários.html">Horários de Atendimento</a></li><br>
+                <li><a href="Contato.html">Contato</a></li><br>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="phone.jpg" title="Contato" height="70">
+            </div>
+    
+            <div    class="content">
+                <h2>Contatos:</h2>
+                <p>
+                    <span>Telefone: (91) 3456-7890</span>  <span>Whatsapp: (91) 97654-3210</span>
+                </p>
+                <p>
+                    <span>Rua Something, 123-C - Cidade Exemple</span>  <span>Estate, Brasil</span>
+                </p>
+                <form name="singup" alert="Enviado" method="get">
+                    <label>Nome:</label> <span name="sp1"><input type="text" name="nome"><br></span>
+                    <label> E-mail:</label> <input type="email" name="e-mail"><br>
+                    <label> Assunto:</label><input type="text" name="about"><br>
+                    <label> Mensagem:</label> <textarea cols="30" rows="10"></textarea>
+                    <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+                </form>
+                <div id="fram1">
+                    <iframe width="400" height="400" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2566393.4299393706!2d-51.055485767964655!3d-4.333214406447723!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1688780021025!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>   
+                </div>    
+
+            <div    class="footer">  
+                <font style="font-size: 75%;font-weight: 600;" face="arial" >Número: (12) 3456-7890</font> <br>
+                <font style="font-size: 75%;font-weight: 600;" face="arial" >Email: example@mail.com</font>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
